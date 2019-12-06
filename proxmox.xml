@@ -66,6 +66,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
+					<logtimefmt/>
                     <port/>
                     <description/>
                     <inventory_link>0</inventory_link>
@@ -103,7 +104,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>{#PMXNODE}:</filter>
+                    <filter>
+						<evaltype/>
+						<formula>{#PMXNODE}:</formula>
+						<conditions/>
+					</filter>
                     <lifetime>30</lifetime>
                     <description>Discovers proxmox nodes</description>
                     <item_prototypes/>
@@ -134,9 +139,13 @@
                     <username/>
                     <password/>
                     <publickey/>
-                    <privatekey/>
+                    <privatekey/>					
                     <port/>
-                    <filter>{#PMXQEMUVMID}:</filter>
+					<filter>
+						<evaltype/>
+						<formula>{#PMXQEMUVMID}:</formula>
+						<conditions/>
+					</filter>					
                     <lifetime>30</lifetime>
                     <description>Discovers qemu VM</description>
                     <item_prototypes>
@@ -172,6 +181,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -214,6 +224,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -256,6 +267,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -298,6 +310,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -340,6 +353,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -382,6 +396,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -424,6 +439,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -466,6 +482,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -508,6 +525,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -550,6 +568,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -592,6 +611,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -634,6 +654,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -676,6 +697,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -718,6 +740,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -760,6 +783,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -802,6 +826,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -844,6 +869,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -886,6 +912,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -928,6 +955,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -1140,7 +1168,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>{#IFNAME}:tap[0-9]*i[0-9]|venet*|vmbr*</filter>
+					<filter>
+						<evaltype/>
+						<formula>{#IFNAME}:tap[0-9]*i[0-9]|venet*|vmbr*</formula>
+						<conditions/>
+					</filter>						                  
                     <lifetime>7</lifetime>
                     <description>Discovers all tap interfaces created by proxmox</description>
                     <item_prototypes>
@@ -1176,6 +1208,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -1218,6 +1251,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
+							<logtimefmt/>
                             <port/>
                             <description/>
                             <inventory_link>0</inventory_link>
@@ -1329,6 +1363,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
+					<logtimefmt/>
                     <port/>
                     <description/>
                     <inventory_link>0</inventory_link>
