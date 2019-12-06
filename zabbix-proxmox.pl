@@ -37,8 +37,8 @@ use JSON;
 
 my $host = "localhost";
 my $port = "8006";
-my $username = 'zabbix@pve';
-my $password = 'zabbix';
+my $username = 'zabbix@pam';
+my $password = 'password';
 
 my $arpwatchfile = '/var/lib/arpwatch/arp.dat';
 my $ticketfile = '/tmp/.zabbix-proxmox';
@@ -50,6 +50,7 @@ my $node;
 
 my $ua = LWP::UserAgent->new(cookie_jar => {}, ssl_opts => { verify_hostname => 0 });
 $ua->agent('zabbix proxmox monitoring script');
+$ua->ssl_opts(SSL_verify_mode => 0);
 
 # first run
 login() if ! -e $ticketfile;
