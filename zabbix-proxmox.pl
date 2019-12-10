@@ -40,7 +40,7 @@ my $port = "8006";
 my $username = 'zabbix@pam';
 my $password = 'password';
 
-my $arpwatchfile = '/var/lib/arpwatch/arp.dat';
+my $arpwatchfile = '/var/lib/arpwatch/vmbr0.dat';
 my $ticketfile = '/tmp/.zabbix-proxmox';
 
 my $url_base = "https://" . $host . ":" . $port;
